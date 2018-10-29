@@ -6,6 +6,7 @@
     import echarts from 'echarts'
     import resize from './mixins/resize'
     import customChart from './utils/customChart'
+    import {getGrpMonthInfo} from '@/api/statistics'
 
     export default {
         mixins: [resize],
@@ -54,12 +55,7 @@
                 //axios不支持同步
                 const type = "R";
                 var xArr = [], legendArr = [], dataArr = [];
-                this.$axios.get("https://192.168.1.216:18089/esspadmin/api/grpCount/getGrpMonthInfo",
-                    {
-                        headers: {'Authorization': "Basic YWRtaW46MTIzNDU2"},
-                        params: {"grpType": 4, "column": type},
-                    }
-                ).then(res => {
+                getGrpMonthInfo({"grpType": 4, "column": type,isDay:false}).then(res => {
                     var result = res.data.data;
                     if (type == 'D' ? result.dataInfo && Object.keys(result.dataInfo).length > 0 :
                             (type == "C" ? result.countInfo && Object.keys(result.countInfo).length > 0 :

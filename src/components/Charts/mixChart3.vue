@@ -6,6 +6,7 @@
 import echarts from 'echarts'
 import resize from './mixins/resize'
 import customChart from './utils/customChart'
+import {last30DaysTraffic} from '@/api/statistics'
 
 Date.prototype.format = function (formatStr) {
     formatStr = formatStr || "yyyy-MM-dd HH:mm:ss";
@@ -63,11 +64,7 @@ export default {
         this.chart.setOption(customChart.twoSideOption);
         this.chart.showLoading();
         var xArr = [], yArr = [], zArr = [];
-        this.$axios.get("https://192.168.1.216:18089/esspadmin/api/simCard/last30DaysTraffic",
-            {
-                headers: {'Authorization': "Basic YWRtaW46MTIzNDU2"},
-            }
-        ).then(res => {
+        last30DaysTraffic().then(res => {
             var data = res.data.data.simcardAndTraffic;
             if (data) {
                 var trafficSum = data.trafficSum, simCardCount = data.simCardCount;

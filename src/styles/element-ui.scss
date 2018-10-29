@@ -82,6 +82,8 @@
 }
 
  /************************************************自定义样式********************************************/
+
+ /**********************************表格*************************************/
  .el-table .warning-row {
    background: oldlace;
  }
@@ -104,7 +106,11 @@
    margin-bottom: 0;
    width: 50%;
  }
- //排序
+ /***********************************时间选择器*******************************************/
+ .el-date-editor{
+   vertical-align: top;
+ }
+ /**********************************表头排序*************************************/
  .down,   .up {
    position: relative;
    width: 0;
@@ -125,8 +131,348 @@
    border-top: 6px solid #666;
  }
 
-
  .onU {
    border-bottom: 6px solid #39b2dc;
    border-top: 6px solid #39b2dc;
  }
+
+ /**********************************卡运营商标识*************************************/
+ .img-telecom{
+   margin: 2px 4px -2px 4px;
+   height: 12px;
+   width: 12px;
+   display: inline-block;
+   background-size: 100% 100% !important;
+ }
+ .img-telecom-local{
+   margin: 2px 4px -2px 4px;
+   height: 12px;
+   width: 12px;
+   display: inline-block;
+   background-size: 50% 50% !important;
+ }
+
+ .telecom-mobile {background:url(../assets/images/telecom/icon_telecom_mobile.png);}
+ .telecom-unicom {background:url(../assets/images/telecom/icon_telecom_unicom.png);}
+ .telecom-telecom {background:url(../assets/images/telecom/icon_telecom_telecom.png);}
+
+ .telecom-mobile-local {background:url(../assets/images/telecom/icon_telecom_mobile_local.png);}
+ .telecom-unicom-local {background:url(../assets/images/telecom/icon_telecom_unicom_local.png);}
+ .telecom-telecom-local {background:url(../assets/images/telecom/icon_telecom_telecom_local.png);}
+
+ /**********************************datePicker*************************************/
+ .el-range-editor--medium.el-input__inner{
+   margin-top: 7px;
+ }
+ /**********************************button*************************************/
+ .filter-container .filter-item{
+   margin-bottom: 4px!important;
+ }
+
+ /**********************************progress bar*************************************/
+ .progress {
+   -webkit-border-radius: 3px;
+   -webkit-background-clip: padding-box;
+   -moz-border-radius: 3px;
+   -moz-background-clip: padding;
+   border-radius: 3px;
+   background-clip: padding-box;
+   -webkit-box-shadow: none;
+   -moz-box-shadow: none;
+   box-shadow: none;
+   background: #e5e5e5;
+   height: 18px;
+   position: relative
+ }
+
+ .progress-bar {
+   float: left;
+   width: 0;
+   height: 100%;
+   font-size: 12px;
+   line-height: 20px;
+   color: #fff;
+   text-align: center;
+   background-color: #337ab7;
+   -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+   box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+   -webkit-transition: width .6s ease;
+   -o-transition: width .6s ease;
+   transition: width .6s ease;
+ }
+
+ .progress:before {
+   display: inline-block;
+   content: "";
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+ }
+
+ .progress .progress-bar {
+   -webkit-box-shadow: none;
+   -moz-box-shadow: none;
+   box-shadow: none;
+   line-height: 18px
+ }
+
+ .progress-box {
+   min-width: 140px;
+   overflow: hidden;
+   word-break: keep-all;
+   text-overflow: ellipsis;
+   height: 23px;
+   line-height: 22px;
+ }
+
+ .bg-primary {
+   background-color: #4374e0 !important;
+ }
+ .bg-default {
+   background-color: #ccc !important;
+ }
+
+ /**********************************国家地区标识*************************************/
+ .img-country{
+   margin: 1px 3px -1px 3px;
+   height: 10px;
+   width: 15px;
+   display: inline-block;
+   background-size: 100% 100% !important;
+ }
+
+ .country-ad {background:url(../assets/images/country/icon_country_ad.png);}
+ .country-ae {background:url(../assets/images/country/icon_country_ae.png);}
+ .country-ae {background:url(../assets/images/country/icon_country_ae.png);}
+ .country-ae {background:url(../assets/images/country/icon_country_ae.png);}
+ .country-af {background:url(../assets/images/country/icon_country_af.png);}
+ .country-ag {background:url(../assets/images/country/icon_country_ag.png);}
+ .country-ai {background:url(../assets/images/country/icon_country_ai.png);}
+ .country-al {background:url(../assets/images/country/icon_country_al.png);}
+ .country-am {background:url(../assets/images/country/icon_country_am.png);}
+ .country-ao {background:url(../assets/images/country/icon_country_ao.png);}
+ .country-ar {background:url(../assets/images/country/icon_country_ar.png);}
+ .country-as {background:url(../assets/images/country/icon_country_as.png);}
+ .country-at {background:url(../assets/images/country/icon_country_at.png);}
+ .country-au {background:url(../assets/images/country/icon_country_au.png);}
+ .country-aw {background:url(../assets/images/country/icon_country_aw.png);}
+ .country-az {background:url(../assets/images/country/icon_country_az.png);}
+ .country-ba {background:url(../assets/images/country/icon_country_ba.png);}
+ .country-bb {background:url(../assets/images/country/icon_country_bb.png);}
+ .country-bd {background:url(../assets/images/country/icon_country_bd.png);}
+ .country-be {background:url(../assets/images/country/icon_country_be.png);}
+ .country-bf {background:url(../assets/images/country/icon_country_bf.png);}
+ .country-bg {background:url(../assets/images/country/icon_country_bg.png);}
+ .country-bh {background:url(../assets/images/country/icon_country_bh.png);}
+ .country-bi {background:url(../assets/images/country/icon_country_bi.png);}
+ .country-bj {background:url(../assets/images/country/icon_country_bj.png);}
+ .country-bm {background:url(../assets/images/country/icon_country_bm.png);}
+ .country-bn {background:url(../assets/images/country/icon_country_bn.png);}
+ .country-bo {background:url(../assets/images/country/icon_country_bo.png);}
+ .country-br {background:url(../assets/images/country/icon_country_br.png);}
+ .country-bs {background:url(../assets/images/country/icon_country_bs.png);}
+ .country-bt {background:url(../assets/images/country/icon_country_bt.png);}
+ .country-bw {background:url(../assets/images/country/icon_country_bw.png);}
+ .country-by {background:url(../assets/images/country/icon_country_by.png);}
+ .country-bz {background:url(../assets/images/country/icon_country_bz.png);}
+ .country-ca {background:url(../assets/images/country/icon_country_ca.png);}
+ .country-cd {background:url(../assets/images/country/icon_country_cd.png);}
+ .country-cf {background:url(../assets/images/country/icon_country_cf.png);}
+ .country-cg {background:url(../assets/images/country/icon_country_cg.png);}
+ .country-ch {background:url(../assets/images/country/icon_country_ch.png);}
+ .country-ci {background:url(../assets/images/country/icon_country_ci.png);}
+ .country-ck {background:url(../assets/images/country/icon_country_ck.png);}
+ .country-cl {background:url(../assets/images/country/icon_country_cl.png);}
+ .country-cm {background:url(../assets/images/country/icon_country_cm.png);}
+ .country-cn {background:url(../assets/images/country/icon_country_cn.png);}
+ .country-cn {background:url(../assets/images/country/icon_country_cn.png);}
+ .country-co {background:url(../assets/images/country/icon_country_co.png);}
+ .country-cr {background:url(../assets/images/country/icon_country_cr.png);}
+ .country-cu {background:url(../assets/images/country/icon_country_cu.png);}
+ .country-cv {background:url(../assets/images/country/icon_country_cv.png);}
+ .country-cy {background:url(../assets/images/country/icon_country_cy.png);}
+ .country-cz {background:url(../assets/images/country/icon_country_cz.png);}
+ .country-de {background:url(../assets/images/country/icon_country_de.png);}
+ .country-dj {background:url(../assets/images/country/icon_country_dj.png);}
+ .country-dk {background:url(../assets/images/country/icon_country_dk.png);}
+ .country-dm {background:url(../assets/images/country/icon_country_dm.png);}
+ .country-do {background:url(../assets/images/country/icon_country_do.png);}
+ .country-dz {background:url(../assets/images/country/icon_country_dz.png);}
+ .country-ec {background:url(../assets/images/country/icon_country_ec.png);}
+ .country-ee {background:url(../assets/images/country/icon_country_ee.png);}
+ .country-eg {background:url(../assets/images/country/icon_country_eg.png);}
+ .country-er {background:url(../assets/images/country/icon_country_er.png);}
+ .country-es {background:url(../assets/images/country/icon_country_es.png);}
+ .country-et {background:url(../assets/images/country/icon_country_et.png);}
+ .country-fi {background:url(../assets/images/country/icon_country_fi.png);}
+ .country-fj {background:url(../assets/images/country/icon_country_fj.png);}
+ .country-fk {background:url(../assets/images/country/icon_country_fk.png);}
+ .country-fm {background:url(../assets/images/country/icon_country_fm.png);}
+ .country-fo {background:url(../assets/images/country/icon_country_fo.png);}
+ .country-fr {background:url(../assets/images/country/icon_country_fr.png);}
+ .country-ga {background:url(../assets/images/country/icon_country_ga.png);}
+ .country-gb {background:url(../assets/images/country/icon_country_gb.png);}
+ .country-gb {background:url(../assets/images/country/icon_country_gb.png);}
+ .country-gd {background:url(../assets/images/country/icon_country_gd.png);}
+ .country-ge {background:url(../assets/images/country/icon_country_ge.png);}
+ .country-gf {background:url(../assets/images/country/icon_country_gf.png);}
+ .country-gh {background:url(../assets/images/country/icon_country_gh.png);}
+ .country-gi {background:url(../assets/images/country/icon_country_gi.png);}
+ .country-gl {background:url(../assets/images/country/icon_country_gl.png);}
+ .country-gm {background:url(../assets/images/country/icon_country_gm.png);}
+ .country-gn {background:url(../assets/images/country/icon_country_gn.png);}
+ .country-gq {background:url(../assets/images/country/icon_country_gq.png);}
+ .country-gr {background:url(../assets/images/country/icon_country_gr.png);}
+ .country-gt {background:url(../assets/images/country/icon_country_gt.png);}
+ .country-gu {background:url(../assets/images/country/icon_country_gu.png);}
+ .country-gw {background:url(../assets/images/country/icon_country_gw.png);}
+ .country-gy {background:url(../assets/images/country/icon_country_gy.png);}
+ .country-hk {background:url(../assets/images/country/icon_country_hk.png);}
+ .country-hn {background:url(../assets/images/country/icon_country_hn.png);}
+ .country-hr {background:url(../assets/images/country/icon_country_hr.png);}
+ .country-ht {background:url(../assets/images/country/icon_country_ht.png);}
+ .country-hu {background:url(../assets/images/country/icon_country_hu.png);}
+ .country-id {background:url(../assets/images/country/icon_country_id.png);}
+ .country-ie {background:url(../assets/images/country/icon_country_ie.png);}
+ .country-in {background:url(../assets/images/country/icon_country_in.png);}
+ .country-in {background:url(../assets/images/country/icon_country_in.png);}
+ .country-in {background:url(../assets/images/country/icon_country_in.png);}
+ .country-iq {background:url(../assets/images/country/icon_country_iq.png);}
+ .country-ir {background:url(../assets/images/country/icon_country_ir.png);}
+ .country-is {background:url(../assets/images/country/icon_country_is.png);}
+ .country-it {background:url(../assets/images/country/icon_country_it.png);}
+ .country-jm {background:url(../assets/images/country/icon_country_jm.png);}
+ .country-jo {background:url(../assets/images/country/icon_country_jo.png);}
+ .country-jp {background:url(../assets/images/country/icon_country_jp.png);}
+ .country-jp {background:url(../assets/images/country/icon_country_jp.png);}
+ .country-ke {background:url(../assets/images/country/icon_country_ke.png);}
+ .country-kg {background:url(../assets/images/country/icon_country_kg.png);}
+ .country-kh {background:url(../assets/images/country/icon_country_kh.png);}
+ .country-ki {background:url(../assets/images/country/icon_country_ki.png);}
+ .country-km {background:url(../assets/images/country/icon_country_km.png);}
+ .country-kn {background:url(../assets/images/country/icon_country_kn.png);}
+ .country-kp {background:url(../assets/images/country/icon_country_kp.png);}
+ .country-kr {background:url(../assets/images/country/icon_country_kr.png);}
+ .country-kw {background:url(../assets/images/country/icon_country_kw.png);}
+ .country-ky {background:url(../assets/images/country/icon_country_ky.png);}
+ .country-kz {background:url(../assets/images/country/icon_country_kz.png);}
+ .country-la {background:url(../assets/images/country/icon_country_la.png);}
+ .country-lb {background:url(../assets/images/country/icon_country_lb.png);}
+ .country-lc {background:url(../assets/images/country/icon_country_lc.png);}
+ .country-li {background:url(../assets/images/country/icon_country_li.png);}
+ .country-lk {background:url(../assets/images/country/icon_country_lk.png);}
+ .country-lr {background:url(../assets/images/country/icon_country_lr.png);}
+ .country-ls {background:url(../assets/images/country/icon_country_ls.png);}
+ .country-lt {background:url(../assets/images/country/icon_country_lt.png);}
+ .country-lu {background:url(../assets/images/country/icon_country_lu.png);}
+ .country-lv {background:url(../assets/images/country/icon_country_lv.png);}
+ .country-ly {background:url(../assets/images/country/icon_country_ly.png);}
+ .country-ma {background:url(../assets/images/country/icon_country_ma.png);}
+ .country-mc {background:url(../assets/images/country/icon_country_mc.png);}
+ .country-md {background:url(../assets/images/country/icon_country_md.png);}
+ .country-me {background:url(../assets/images/country/icon_country_me.png);}
+ .country-mg {background:url(../assets/images/country/icon_country_mg.png);}
+ .country-mh {background:url(../assets/images/country/icon_country_mh.png);}
+ .country-mk {background:url(../assets/images/country/icon_country_mk.png);}
+ .country-ml {background:url(../assets/images/country/icon_country_ml.png);}
+ .country-mm {background:url(../assets/images/country/icon_country_mm.png);}
+ .country-mn {background:url(../assets/images/country/icon_country_mn.png);}
+ .country-mo {background:url(../assets/images/country/icon_country_mo.png);}
+ .country-mp {background:url(../assets/images/country/icon_country_mp.png);}
+ .country-mq {background:url(../assets/images/country/icon_country_mq.png);}
+ .country-mr {background:url(../assets/images/country/icon_country_mr.png);}
+ .country-ms {background:url(../assets/images/country/icon_country_ms.png);}
+ .country-mt {background:url(../assets/images/country/icon_country_mt.png);}
+ .country-mu {background:url(../assets/images/country/icon_country_mu.png);}
+ .country-mv {background:url(../assets/images/country/icon_country_mv.png);}
+ .country-mw {background:url(../assets/images/country/icon_country_mw.png);}
+ .country-mx {background:url(../assets/images/country/icon_country_mx.png);}
+ .country-my {background:url(../assets/images/country/icon_country_my.png);}
+ .country-mz {background:url(../assets/images/country/icon_country_mz.png);}
+ .country-na {background:url(../assets/images/country/icon_country_na.png);}
+ .country-nc {background:url(../assets/images/country/icon_country_nc.png);}
+ .country-ne {background:url(../assets/images/country/icon_country_ne.png);}
+ .country-ng {background:url(../assets/images/country/icon_country_ng.png);}
+ .country-ni {background:url(../assets/images/country/icon_country_ni.png);}
+ .country-nl {background:url(../assets/images/country/icon_country_nl.png);}
+ .country-no {background:url(../assets/images/country/icon_country_no.png);}
+ .country-np {background:url(../assets/images/country/icon_country_np.png);}
+ .country-nr {background:url(../assets/images/country/icon_country_nr.png);}
+ .country-nu {background:url(../assets/images/country/icon_country_nu.png);}
+ .country-nz {background:url(../assets/images/country/icon_country_nz.png);}
+ .country-om {background:url(../assets/images/country/icon_country_om.png);}
+ .country-pa {background:url(../assets/images/country/icon_country_pa.png);}
+ .country-pe {background:url(../assets/images/country/icon_country_pe.png);}
+ .country-pf {background:url(../assets/images/country/icon_country_pf.png);}
+ .country-pg {background:url(../assets/images/country/icon_country_pg.png);}
+ .country-ph {background:url(../assets/images/country/icon_country_ph.png);}
+ .country-pk {background:url(../assets/images/country/icon_country_pk.png);}
+ .country-pl {background:url(../assets/images/country/icon_country_pl.png);}
+ .country-pm {background:url(../assets/images/country/icon_country_pm.png);}
+ .country-pr {background:url(../assets/images/country/icon_country_pr.png);}
+ .country-ps {background:url(../assets/images/country/icon_country_ps.png);}
+ .country-pt {background:url(../assets/images/country/icon_country_pt.png);}
+ .country-pw {background:url(../assets/images/country/icon_country_pw.png);}
+ .country-py {background:url(../assets/images/country/icon_country_py.png);}
+ .country-qa {background:url(../assets/images/country/icon_country_qa.png);}
+ .country-re {background:url(../assets/images/country/icon_country_re.png);}
+ .country-ro {background:url(../assets/images/country/icon_country_ro.png);}
+ .country-rs {background:url(../assets/images/country/icon_country_rs.png);}
+ .country-ru {background:url(../assets/images/country/icon_country_ru.png);}
+ .country-rw {background:url(../assets/images/country/icon_country_rw.png);}
+ .country-sa {background:url(../assets/images/country/icon_country_sa.png);}
+ .country-sb {background:url(../assets/images/country/icon_country_sb.png);}
+ .country-sc {background:url(../assets/images/country/icon_country_sc.png);}
+ .country-sd {background:url(../assets/images/country/icon_country_sd.png);}
+ .country-se {background:url(../assets/images/country/icon_country_se.png);}
+ .country-sg {background:url(../assets/images/country/icon_country_sg.png);}
+ .country-si {background:url(../assets/images/country/icon_country_si.png);}
+ .country-sk {background:url(../assets/images/country/icon_country_sk.png);}
+ .country-sl {background:url(../assets/images/country/icon_country_sl.png);}
+ .country-sm {background:url(../assets/images/country/icon_country_sm.png);}
+ .country-sn {background:url(../assets/images/country/icon_country_sn.png);}
+ .country-so {background:url(../assets/images/country/icon_country_so.png);}
+ .country-sr {background:url(../assets/images/country/icon_country_sr.png);}
+ .country-st {background:url(../assets/images/country/icon_country_st.png);}
+ .country-sv {background:url(../assets/images/country/icon_country_sv.png);}
+ .country-sy {background:url(../assets/images/country/icon_country_sy.png);}
+ .country-sz {background:url(../assets/images/country/icon_country_sz.png);}
+ .country-tc {background:url(../assets/images/country/icon_country_tc.png);}
+ .country-td {background:url(../assets/images/country/icon_country_td.png);}
+ .country-tg {background:url(../assets/images/country/icon_country_tg.png);}
+ .country-th {background:url(../assets/images/country/icon_country_th.png);}
+ .country-tj {background:url(../assets/images/country/icon_country_tj.png);}
+ .country-tl {background:url(../assets/images/country/icon_country_tl.png);}
+ .country-tm {background:url(../assets/images/country/icon_country_tm.png);}
+ .country-tn {background:url(../assets/images/country/icon_country_tn.png);}
+ .country-to {background:url(../assets/images/country/icon_country_to.png);}
+ .country-tr {background:url(../assets/images/country/icon_country_tr.png);}
+ .country-tt {background:url(../assets/images/country/icon_country_tt.png);}
+ .country-tw {background:url(../assets/images/country/icon_country_tw.png);}
+ .country-tz {background:url(../assets/images/country/icon_country_tz.png);}
+ .country-ua {background:url(../assets/images/country/icon_country_ua.png);}
+ .country-ug {background:url(../assets/images/country/icon_country_ug.png);}
+ .country-us {background:url(../assets/images/country/icon_country_us.png);}
+ .country-us {background:url(../assets/images/country/icon_country_us.png);}
+ .country-us {background:url(../assets/images/country/icon_country_us.png);}
+ .country-us {background:url(../assets/images/country/icon_country_us.png);}
+ .country-us {background:url(../assets/images/country/icon_country_us.png);}
+ .country-us {background:url(../assets/images/country/icon_country_us.png);}
+ .country-us {background:url(../assets/images/country/icon_country_us.png);}
+ .country-uy {background:url(../assets/images/country/icon_country_uy.png);}
+ .country-uz {background:url(../assets/images/country/icon_country_uz.png);}
+ .country-va {background:url(../assets/images/country/icon_country_va.png);}
+ .country-vc {background:url(../assets/images/country/icon_country_vc.png);}
+ .country-ve {background:url(../assets/images/country/icon_country_ve.png);}
+ .country-vg {background:url(../assets/images/country/icon_country_vg.png);}
+ .country-vi {background:url(../assets/images/country/icon_country_vi.png);}
+ .country-vn {background:url(../assets/images/country/icon_country_vn.png);}
+ .country-vu {background:url(../assets/images/country/icon_country_vu.png);}
+ .country-wf {background:url(../assets/images/country/icon_country_wf.png);}
+ .country-ws {background:url(../assets/images/country/icon_country_ws.png);}
+ .country-ye {background:url(../assets/images/country/icon_country_ye.png);}
+ .country-za {background:url(../assets/images/country/icon_country_za.png);}
+ .country-zm {background:url(../assets/images/country/icon_country_zm.png);}
+ .country-zw {background:url(../assets/images/country/icon_country_zw.png);}

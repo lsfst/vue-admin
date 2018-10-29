@@ -18,6 +18,14 @@
                                :value="item.key"/>
                 </el-select>
 
+                <!--<el-select v-model="listQuery.discount" class="filter-item" :placeholder="$t('table.tbAgent.discount')" filterable remote-->
+                           <!--style="width: 90px" clearable @change="handleFilter"-->
+                           <!--@focus="switchDiscount" :remote-method="remoteDiscountMethod" :loading="selectLoading"-->
+                           <!--clearable>-->
+                    <!--<el-option v-for="item in discountOptions" :key="item.value" :label="item.label"-->
+                               <!--:value="item.value"/>-->
+                <!--</el-select>-->
+
                 <el-select v-model="listQuery.status" :placeholder="$t('table.tbAgent.status')" clearable
                            style="width: 90px" class="filter-item" @change="handleFilter">
                     <el-option v-for="item in statusOptions" :key="item.key" :label="item.display_name"
@@ -252,7 +260,7 @@
     import {discountS2} from '@/api/select'
     import waves from '@/directive/waves' // 水波纹指令
     import {parseTime} from '@/utils'
-    import {copyRelatedAttrs} from '@/filters/index'
+//    import {copyRelatedAttrs} from '@/filters/index'
     import {tableSortDown,tableSortUp,handleDelete,handleDownload,updateData,renderHeadSort,handleCreate,createData,
         handleUpdate,getList,selectionChange,selectionAll} from '@/utils/tableCustom'
     import Sticky from '@/components/Sticky'
@@ -327,13 +335,12 @@
                     page: 1,
                     offset: 0,
                     limit: 20,
+                    orderList: [],
                     agentLevel: undefined,
                     status: undefined,
                     idxAgentName: undefined,
                     name: undefined,
                     phoneNumber: undefined,
-                    orderList: [],
-                    table_columns: undefined,
                     importance: undefined,
                     title: undefined,
                     type: undefined,
@@ -365,7 +372,6 @@
                     create: 'create',
                     batchUpdate: 'batchEdit'
                 },
-                dialogPvVisible: false,
                 rules: {},
                 singleRules: {
                     idxAgentName: [{required: true, message: 'idxAgentName is required', trigger: 'blur'}],
